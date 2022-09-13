@@ -40,7 +40,7 @@ actor Counter {
       let counter = Nat.toText(currentValue);
       Debug.print(counter);
       {
-        body= Text.encodeUtf8("counter:"#counter#“,bye”);
+        body= Text.encodeUtf8("counter:" # counter# ",bye");
         headers= [];
         status_code= 200;
       }
